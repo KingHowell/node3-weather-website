@@ -23,14 +23,14 @@ app.use(express.static(publicDirectoryPath));
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weather",
-    name: "Andrew Mead",
+    name: "Howell Querubin",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About Me",
-    name: "Andrew Mead",
+    name: "Howell Querubin",
   });
 });
 
@@ -38,7 +38,7 @@ app.get("/help", (req, res) => {
   res.render("help", {
     helpText: "This is some helpful text.",
     title: "Help",
-    name: "Andrew Mead",
+    name: "Howell Querubin",
   });
 });
 
@@ -64,7 +64,7 @@ app.get("/weather", (req, res) => {
 
         // res.render("weather", {
         //   title: "Weather Forecast",
-        //   name: "Andrew Mead",
+        //   name: "Howell Querubin",
         //   forecast: forecastData,
         //   location,
         //   address: req.query.address,
@@ -94,7 +94,7 @@ app.get("/products", (req, res) => {
 app.get("/help/*", (req, res) => {
   res.render("error404", {
     title: "404",
-    name: "Andrew Mead",
+    name: "Howell Querubin",
     errorMessage: "Help article not found.",
   });
 });
@@ -102,7 +102,7 @@ app.get("/help/*", (req, res) => {
 app.get("*", (req, res) => {
   res.render("error404", {
     title: "404",
-    name: "Andrew Mead",
+    name: "Howell Querubin",
     errorMessage: "Page not found.",
   });
 });
